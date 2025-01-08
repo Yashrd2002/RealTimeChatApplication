@@ -5,7 +5,7 @@ import getUsers from '../actions/getUsers';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'My Conversations | Nexus - Your Ultimate Chat Experience',
+  title: 'Chat',
 };
 
 export default async function ConversationsLayout({
