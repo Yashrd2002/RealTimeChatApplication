@@ -72,7 +72,7 @@ const AuthForm = () => {
           }
 
           if (res?.ok && !res?.error) {
-            toast.success('Entering Nexus!');
+            toast.success('Please Wait!');
             router.push('/users');
           }
         })
@@ -92,7 +92,7 @@ const AuthForm = () => {
         }
 
         if (res?.ok && !res?.error) {
-          toast.success('Entering Nexus!');
+          toast.success('Please Wait!');
         }
       })
       .finally(() => setIsLoading(false));
@@ -137,7 +137,7 @@ const AuthForm = () => {
         </form>
 
         {/* Social Login Buttons */}
-        <article className="mt-6">
+        {/* <article className="mt-6">
           <div className="relative">
             <div className="absolute inset-0 flex items-center">
               <div className="w-full border-t border-gray-300" />
@@ -164,7 +164,7 @@ const AuthForm = () => {
               onClick={() => socialAction('twitter')}
             />
           </div>
-        </article>
+        </article> */}
 
         {/* Toggle Login/Register */}
         <div className="flex gap-2 justify-center text-sm mt-6 px-2 text-gray-500">
@@ -176,7 +176,7 @@ const AuthForm = () => {
           <button
             type="button"
             onClick={toggleVariant}
-            className="underline text-blue-500 hover:text-blue-600"
+            className="underline text-[#6E39CB] hover:text-[#9f74e8]"
           >
             {variant === 'REGISTER' ? 'Sign in' : 'Sign up'}
           </button>

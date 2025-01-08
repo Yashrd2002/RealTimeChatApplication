@@ -46,7 +46,7 @@ const Form = () => {
         uploadPreset={process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}
         
       >
-        <HiPhoto size={30} className="text-cyan-500" />
+        <HiPhoto size={30} className="text-[#6E39CB]" />
       </CldUploadButton>
       <form
         onSubmit={handleSubmit(onSubmit)}
@@ -61,7 +61,7 @@ const Form = () => {
         />
         <button
           type="submit"
-          className="rounded-full p-2 bg-cyan-500 cursor-pointer hover:bg-cyan-600 transition"
+          className="rounded-full p-2 bg-[#6E39CB] cursor-pointer hover:bg-[#6E39CB] transition"
         >
           <HiPaperAirplane size={20} className="text-white" />
         </button>
